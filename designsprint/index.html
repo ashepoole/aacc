@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Design Sprint</title>
+	<meta name="author" content="Ashton Poole">
+	<meta name="description" content="What a design sprint is, and how we did it.">
+	<link rel="stylesheet" href="display.css" type="text/css">
+</head>
+
+<body>
+	<div id="wrapper">
+		<nav>
+			<ul>
+				<li><a href="#s1">About</a></li>
+				<li><a href="#s2">Understand</a></li>
+				<li><a href="#s3">Diverge</a></li>
+				<li><a href="#s4">Decide</a></li>
+				<li><a href="#s5">Prototype</a></li>
+				<li><a href="#s6">Validate</a></li>
+				<li><a href="#s7">Conclusion</a></li>
+			</ul>
+		</nav>
+
+		<main>
+
+			<div class="flex" id="header">
+				<h1>Design Sprint</h1>
+				<img class="disable-select" src="img/signatures.png" alt="Signed by Ashton, Anna and Alex.">
+			</div>
+			<img class="spread" src="img/planning.JPG"
+				alt="A whiteboard depicting various notes and documentation on a project for the Maryland Food Bank.">
+
+			<div class="hideme" id="s1">
+				<h2>About Design Sprints</h2>
+				<p>A design sprint is a new concept in the design world used to rapily create a prototype ready to be
+					put through user testing. It was first developed at GV, who describes it as a "greatest hits" of
+					business strategy, innovation, behavior science, design thinking, and more.</p>
+				<p>A sprint is a five-day process in which each work day is dedicated to a new step in the process. The
+					idea is that a problem is identified, and different solutions are rapidly developed.</p>
+				<p>My Web Design 2 professor recently had my class go through this process over the course of about
+					eight hours. The following is a documentation of this experience.</p>
+
+			</div>
+
+			<div class="hideme" id="s2">
+				<h2>Understand</h2>
+				<img class="spread" src="img/board.JPG"
+					alt="My Web Design 2 class, working out a plan in front of a whiteboard.">
+				<p>To begin, Professor Erik Dunham gave us a problem to solve. The scenario was that the Maryland Food
+					Bank had hired us to create an app that would increase their online donations. We started by doing
+					short interviews with each other, and writing down the given answers on post-it notes. We then
+					arranged their answers into categories in an attempt to identify different issues somebody may have
+					with donating online.</p>
+			</div>
+
+			<div class="hideme" id="s3">
+				<h2>Diverge</h2>
+				<img class="spread" src="img/teama.JPG" alt="Students comparing their ideas.">
+				<p>Taking the feedback we had recieved from the class, we went our seperate ways to sketch out different
+					ideas of how to solve the issues. I focused on trying to solve the user trust issue we saw on the
+					whiteboard - that a lot of users didn't trust their information for online donations. We all ran
+					through a Crazy Eights excersize, and </p>
+			</div>
+
+			<div class="hideme" id="s4">
+				<h2>Decide</h2>
+				<img class="spread" src="img/decide.jpg" alt="Ashton's idea for an app.">
+				<p>For this stage, I grouped up with others in the class - Anna Copper, and Alexander Garcia, to compare
+					ideas. Our goal at this stage was to choose ideas, and further flesh them out. We did this by voting
+					on our favorite ideas from our three concepts.</p>
+			</div>
+
+			<div class="hideme" id="s5">
+				<h2>Prototype</h2>
+				<img class="spread" src="img/prototype.jpg"
+					alt="A sketch of different screens on a phone, used to create a prototype. Next to it, a phone running Marvel's prototyping software, with our app on the screen.">
+				<p>Based on the feedback we had recieved from each other, we began to work together to create a final
+					concept.</p>
+				<p>We used Marvel's prototyping app on our phones to do this - it allows you to add a layer of
+					interactivity to still images, such as sketches. Through this tool, we were able to build a working
+					prototype of our concept.</p>
+			</div>
+
+			<div class="hideme" id="s6">
+				<h2>Validate</h2>
+				<img class="spread" src="img/usertest.JPG" alt="Students conducting a user testing session.">
+				<p>My group decided that I would be running the user test session, while Alexander took notes. Our
+					professor used a random name picker to choose who we would be interviewing.</p>
+				<p>During the test session, we were able to see the strengths and flaws in our design very clearly.
+					While our plan was to help solve the issues that were brought up with user trust by keeping
+					everything clean and approachable, our end-user commented that she felt like she wasn't being given
+					enough information, and wanted to know the explicit details that we had kept simple.</p>
+				<p>This was also good experience in the user testing process itself. Our app did not have a "back"
+					button in the prototype, simply because we felt it wouldn't be neccecary for our test. However, that
+					was the first thing our end-user searched for, and it's absense became a distraction and gave her a
+					negative view of our app.</p>
+				<p>While our app was not perfect, we were able to see these problems. If we were actually building this
+					app, we could begin to solve them with a revision.</p>
+			</div>
+
+			<div class="hideme" id="s7">
+				<h2>Conclusion</h2>
+				<p>This was a great experience in working with a team, as well as rapidly building a concept from the
+					ground up. I'm very grateful to my professor for bringing this oppertunity to us. One of the reasons
+					I signed up for my college's Web Design 2 class was that I was told we'd be working in groups, and
+					having a group project on day one was fantastic.</p>
+				<p>I'd also like to thank both Anna Cooper and Alexander Garcia. It was great working with you both.</p>
+			</div>
+
+			<div id="footer">
+				<p>Ashton Poole &copy; 2018</p>
+			</div>
+		</main>
+
+
+	</div> <!-- closes wrapper -->
+
+	<!-- These scripts enable the scrolling -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('a[href^="#"]').on('click', function (e) {
+				e.preventDefault();
+
+				var target = this.hash;
+				var $target = $(target);
+
+				$('html, body').stop().animate({
+					'scrollTop': $target.offset().top
+				}, 1200, 'swing', function () {
+					window.location.hash = target;
+				});
+			});
+		});
+
+
+		$(function () { // $(document).ready shorthand
+			$('.monster').fadeIn('slow');
+		});
+
+		$(document).ready(function () {
+
+			/* Every time the window is scrolled ... */
+			$(window).scroll(function () {
+
+				/* Check the location of each desired element */
+				$('.hideme').each(function (i) {
+
+					var bottom_of_object = $(this).position().top + $(this).outerHeight();
+					var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+					/* If the object is completely visible in the window, fade it it */
+					if (bottom_of_window > bottom_of_object) {
+
+						$(this).animate({
+							'opacity': '1'
+						}, 1500);
+
+					}
+
+				});
+
+			});
+
+		});
+	</script>
+	<!-- End scrolling scripts -->
+</body>
+
+</html>

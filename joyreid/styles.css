@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,500,500i');
+
+@font-face
+{
+	font-family:Gilbert;
+	src:url(fonts/Gilbert-Color.otf);
+}
+
+@font-face 
+{
+    font-family:PlainGilbert;
+    src:url(fonts/Gilbert.otf);
+}
+
+*
+{
+	margin:0;
+	padding:0;
+	font-family: 'Fira Sans', sans-serif;
+}
+
+::selection
+{
+    background:#05ce7c;
+}
+
+::-moz-selection
+{
+    background:#05ce7c;
+}
+
+a:link 
+{
+	color:#00b3e3;
+}
+
+a:visited 
+{
+	color:#da3ab3;
+}
+
+html, body 
+{
+	background-color:black;
+	overflow-x:hidden;
+}
+
+body
+{
+	min-width:800px;
+}
+
+img
+{
+	max-width: 100%;
+	max-height: 100%;
+}
+
+#firstimpression
+{
+	width:90vw;
+	height:90vh;
+	padding:5vh 5vw;
+	display:grid;
+	background-color:white;
+}
+
+#credits
+{
+	width:100vw;
+	height:100vh;
+	display:grid;
+	grid-template-rows: repeat(6, 1fr);
+}
+
+#credits p
+{
+	font-family:PlainGilbert, sans-serif;
+	color:white;
+	font-size:2em;
+	align-self:center;
+	text-align:center;
+	justify-self:center;
+}
+
+#s1
+{
+	padding:100px 0;
+	background-color:black;
+	color:white;
+	font-family: 'Fira Sans', sans-serif;
+	font-weight:300;
+	width:80vw;
+	margin:0 auto;
+	display:grid;
+	grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-gap: 50px;
+}
+
+#s2
+{
+	padding:100px 10vw;
+	background-color:white;
+	color:black;
+	font-family: 'Fira Sans', sans-serif;
+	font-weight:300;
+	width:80vw;
+	margin:0 auto;
+	display:grid;
+	grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-gap: 50px;
+}
+
+#s3 img
+{
+	width:100%;
+	max-width:100%
+}
+
+#s3
+{
+	padding:100px 10vw;
+	background-color:black;
+	color:white;
+	font-family: 'Fira Sans', sans-serif;
+	font-weight:300;
+	width:80vw;
+	margin:0 auto;
+	display:grid;
+	grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-gap: 50px;
+}
+
+#end
+{
+	width:80vw;
+	height:80vh;
+	padding:10vh 10vw;
+	display:grid;
+	background-color:white;
+	color:black;
+	grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
+	font-family: 'Fira Sans', sans-serif;
+	font-weight:300;
+}
+
+#end p
+{
+	align-self:center;
+	justify-self:center;
+	padding:15px;
+}
+
+li
+{
+	font-weight:300;
+	font-size:1.1em;
+	max-width:75ch;
+}
+
+p
+{
+	font-size:1.1em;
+	max-width:75ch;
+}
+
+h1
+{
+	font-family:Gilbert, sans-serif;
+	justify-self:center;
+	align-self:flex-end;
+	font-size:4em;
+}
+
+h2
+{
+	font-family:PlainGilbert, sans-serif;
+	font-size:2em;
+	padding:20px 0 10px 0;
+}
+
+#subheader
+{
+	justify-self:center;
+    font-family: 'Fira Sans', sans-serif;
+	font-style:italic;
+	font-size:1.1em;
+	color:black;
+}
+
+/* CSS "Formatting" Callouts */
+.red{background-color:#ff4338;display:grid;}
+.orange{background-color:#ff6b00;display:grid;}
+.yellow{background-color:#ffc843;display:grid;}
+.green{background-color:#05ce7c;display:grid;}
+.blue{background-color:#00b3e3;display:grid;}
+.purple{background-color:#da3ab3;display:grid;}
+.span2{grid-column: span 2;}
+.span3{grid-column: span 3;}
+.span4{grid-column: span 4;}
+.span6{grid-column: span 6;}
+.rowspan2{grid-row: span 2;}
+.rowspan4{grid-row: span 4;}
+.right4{grid-column-start:3;grid-column-end:7;}
+.right3{grid-column-start:4;grid-column-end:7;}
+.statement{padding-left:30px;padding-top:30px;font-style:italic;}
+.justifyr{justify-self:end;}
+.justifyc{justify-self:center;}
+.justifyl{justify-self:start;}

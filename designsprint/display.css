@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro|Playfair+Display');
+
+body
+{
+	margin:0;
+	padding:0;
+}
+
+#wrapper
+{
+	min-width:550px;
+	max-width:1500px;
+}
+
+nav
+{
+	position: fixed;
+	min-width:110px;
+	top:120px;
+	left:0;
+	height:100%;
+	width:20%;
+	float:right;
+}
+
+nav ul li
+{
+	text-align:right;
+	list-style:none;
+	font-size:1.5em;
+	margin-top:30px;
+}	
+
+a:link, a:visited
+{
+	color:#000000;
+	text-decoration: none;
+}
+
+.flex
+{
+	display: flex;
+	flex-direction:row;
+	justify-content: space-between;
+}
+
+#header
+{
+	padding-top:75px;
+}
+
+.flex img
+{
+	max-width:30%;
+    height: auto;
+	object-fit:contain;
+	display:block;
+}
+
+.spread
+{
+	width:100%;
+}
+
+.hideme
+{
+    opacity:0;
+}
+
+.decideimg
+{
+	display:block;
+	clear:both;
+	width:350px;
+	padding:10px 0;
+}
+
+main
+{
+	width:65%;
+	float:right;
+	padding-right:10%;
+}
+	
+h1
+{
+    font-family: 'Playfair Display', serif;
+	font-size: 5em;
+	color:#557DBF;
+	margin-bottom:20px;
+	float:left;
+}
+
+h2
+{
+    font-family: 'Playfair Display', serif;
+	font-size: 3.5em;
+	color:#557DBF;
+	margin-bottom:10px;
+}
+
+p
+{
+	font-size:1.2em;
+}
+
+body
+{
+    font-family: 'Maven Pro', sans-serif;
+}
+	
+img
+{
+	width:700px;
+}
+	
+#s1
+{
+	padding-top:50px;
+}
+
+#s2
+{
+	padding-top:50px;
+}	
+	
+#s3
+{
+	padding-top:50px;
+}
+	
+#s4
+{
+	padding-top:50px;
+}
+	
+#s5
+{
+	padding-top:50px;
+}
+
+#s6
+{
+	padding-top:50px;
+}
+
+#s7
+{
+	padding-top:50px;
+}
+
+#footer
+{
+	text-align:right;
+	padding-top:50px;
+}
+
+.disable-select /*disables highlighting elements*/
+{
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+}
